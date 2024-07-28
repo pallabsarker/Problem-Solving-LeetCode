@@ -10,3 +10,15 @@ class Solution:
             if rev > 2147483647/10 or rev < -2147483648/10: return 0
             rev = (rev * 10) + digit
         return c * rev
+
+# class Solution:
+#     def reverse(self, x: int) -> int:
+#         rev = 0
+#         a = abs(x)
+#         while a > 0:
+#             digit = a % 10
+#             rev = (rev * 10) + digit
+#             a //= 10
+#         if x < 0: rev = -rev
+#         if rev >= -2**31 and rev <= 2**31 - 1: return rev
+#         return 0
