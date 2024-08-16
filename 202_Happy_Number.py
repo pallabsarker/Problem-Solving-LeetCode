@@ -1,3 +1,6 @@
+#    Time Complexity: O(1)
+#    Space Complexity: O(1)
+
 class Solution:
     def isHappy(self, n: int) -> bool:
         def squares(n):
